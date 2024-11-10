@@ -28,11 +28,15 @@ a:hover {
 }
 
 body {
-    margin: 0;
-    width: 100%;
-    min-width: 320px;
-    min-height: 100vh;
-    display: block;
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block;
+  background: linear-gradient(135deg, #f7fafc, #e2e8f0); /* Light gradient background */
+  background-size: cover;
+  background-attachment: fixed;
+  color: #2d3748; /* Dark text for contrast on light background */
 }
 
 h1 {
@@ -47,9 +51,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffffff; /* Light background for buttons */
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #2d3748; /* Dark text for visibility on light buttons */
 }
 
 button:hover {
@@ -61,10 +66,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: white;
+    background-color: #1a202c; /* Dark background for dark mode */
   }
 
   a:hover {
@@ -72,6 +77,6 @@ button:focus-visible {
   }
 
   button {
-    background-color: #f9f9f9;
+    background-color: #2d2d2d; /* Dark button background */
   }
 }
